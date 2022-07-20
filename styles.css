@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+font-family: 'Open Sans', sans-serif;
+}
+
+.navbar__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.logo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font: 900 40px 'Montserrat', sans-serif;
+    color: black;
+
+}
+
+.navbar__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font: 400 20px "Montserrat", sans-serif;
+    transition: 0.2s ease;
+}
+
+.navbar__item a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+
+
+
+}
+
+.wrapper {
+
+    background-color: white;
+}
+
+main {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 30px;
+    min-height: 100vh;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    background:  linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),url("https://st3.depositphotos.com/1021369/14681/v/950/depositphotos_146814559-stock-illustration-black-and-white-diagonal-lines.jpg");
+    background-size: 320px;
+}
+
+main>header {
+    margin: 10px auto 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 2px black dashed;
+    border-radius: 10px;
+    
+}
+.header-gradient{
+    background-image: linear-gradient(0deg,rgb(255, 226, 226) 0% ,rgb(255, 255, 255) 40%);
+}
+.card-gradient{
+    background-image: linear-gradient(45deg,rgb(255, 226, 226) 0% ,rgb(255, 255, 255) 40%);
+}
+.divider::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: gray;
+}
+
+.divider__big::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: gray;
+}
+
+main h1 {
+    font-size: 30px;
+}
+
+main h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form__container {
+
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+
+}
+
+.form__photo {
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.form__content{
+    padding: 15px;
+    
+}
+.form__header>h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    display: inline;
+    color: rgb(88, 88, 88);
+    max-width: 160px;
+    word-wrap: break-word;
+}
+.form__header>h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: inline;
+    color: gray;
+    font-size: 30px;
+}
+.form__distance{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: gray;
+    font-size: 20px;
+}
+.form__description{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(42, 42, 42);
+    font-size: 25px;
+    margin: 10px 0;
+    line-height: 1.2;
+    /* background-color: rgba(255, 2, 234, 0.08); */
+    /* background-image: linear-gradient(45deg,rgb(255, 145, 145),rgb(255, 241, 215)); */
+    border: 2px black dashed;
+  
+ 
+border-radius: 10px;
+padding: 10px;
+}
+a{
+
+}
+.form__contact{
+font-size: 18px;
+}
+.form__contact a{
+    color: rgb(130, 67, 233);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+    
+}
+.form__header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.form__top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form__price{
+padding: 20px;
+border-left: 2px red solid;
+margin-top: 10px;
+}
+.form__price p{
+font-size: 25px;
+font-weight: 700;
+color: #008080;
+}
+.reviews__header{
+
+border-radius: 10px;
+border: 2px black dashed;
+text-align: center;
+padding: 20px;
+max-width: 500px;
+margin: 20px auto;
+}
+.reviews__header h2{
+font-size: 25px;
+font-weight: 800;
+
+}
+.reviews{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+
+}
+.review{
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+ max-width: 300px;
+ 
+}
+
+.review .top{
+display: flex;
+align-items: center;
+
+line-height: 1;
+gap: 10px;
+
+}
+.review__content{
+margin-top: 10px;
+}
+.review .top img{
+min-width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.review .top header{
+display: flex;
+flex-wrap: wrap;
+gap:10px;
+}
+.review .top header .rating{
+word-break: keep-all;
+}
+.admin__answer{
+font-weight: 800;
+}
+@media screen and (max-aspect-ratio:1/1),
+screen and (max-width: 800px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+    }
+    .navbar__item{
+        border-top: 1px gray dotted;
+    }
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 5px 10px;
+        padding: 0;
+
+    }
+
+    .header {
+
+        background-image: white;
+        position: relative;
+
+    }
+
+    .logo h1 {
+        font-size: 50px;
+    }
+    .logo{
+        margin: 10px 0;
+    }
+
+    main {
+
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px 10px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .forms {
+        display: flex;
+        flex-wrap: wrap;
+       
+        align-items: center;
+    }
+
+    .form__container {
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+
+    }
+    
+}
